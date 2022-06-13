@@ -1,6 +1,22 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+                                        
+## Publish
+
+Incrémenter le n° de version
+
+```shell
+# Build la librairie
+npm run build
+
+# archive la lib buildée
+npm pack
+
+# publie sur npm
+npm publish
+```
+
 
 ## Available Scripts
 

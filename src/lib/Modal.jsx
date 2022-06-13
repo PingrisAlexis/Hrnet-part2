@@ -6,11 +6,11 @@ import {
     Content,
     Backdrop,
 } from './Modal.style';
-
+import './index.css';
 window.React = React
 
-const Modal= ({isOpen, hide, content,
-                }) => {
+const Modal= ({isOpen, hide, content}) => {
+
     return isOpen ? (
         <>
             <Backdrop />
