@@ -5,11 +5,10 @@ import {
     CloseButton,
     Content,
     Backdrop,
-} from './Modal.style';
-import './index.css';
-window.React = React
+} from "./Modal.style";
+import "./index.css";
 
-const Modal= ({isOpen, hide, content}) => {
+export const Modal= ({isOpen, hide, content}) => {
 
     return isOpen ? (
         <>
@@ -23,5 +22,3 @@ const Modal= ({isOpen, hide, content}) => {
         </>
     ) : null
 };
-
-export default Modal

@@ -28,7 +28,6 @@ export const StyledModal = styled.div`
   position: relative;
   margin: auto;
   border-radius: 0.5rem;
-
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 `;
 
@@ -46,9 +45,16 @@ export const CloseButton = styled.button`
 `;
 
 export const Content = styled.p`
-  padding: 5rem;
+  padding: 4rem;
   display: block;
   font-size: 1.6rem;
   overflow-x: hidden;
   overflow-y: auto;
+  align-items: center;
+  position: relative;
+  bottom: 2rem;
+`;
+
+export const separate = styled.hr`
+  width: 80%;
 `;
