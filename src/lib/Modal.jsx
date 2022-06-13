@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from "react";
+import React from "react";
 import {
     Wrapper,
     StyledModal,
@@ -6,12 +6,11 @@ import {
     Content,
     Backdrop,
 } from './Modal.style';
-import {ModalProps} from "../../type.d";
 
-const Modal: FunctionComponent<ModalProps> = ({isOpen,
-                                                         hide,
-                                                         content,
-                                                     }) => {
+window.React = React
+
+const Modal= ({isOpen, hide, content,
+                }) => {
     return isOpen ? (
         <>
             <Backdrop />
@@ -24,4 +23,5 @@ const Modal: FunctionComponent<ModalProps> = ({isOpen,
         </>
     ) : null
 };
-export default Modal;
+
+export default Modal
