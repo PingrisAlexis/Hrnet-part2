@@ -1,24 +1,17 @@
 import React from "react";
-import {
-    Wrapper,
-    StyledModal,
-    CloseButton,
-    Content,
-    Backdrop,
-} from "./Modal.style";
-import "./index.css";
+import styles from "./Modal.module.css"
 
 export const Modal= ({isOpen, hide, content}) => {
 
     return isOpen ? (
         <>
-            <Backdrop />
-            <Wrapper>
-                <StyledModal>
-                    <CloseButton onClick={hide}>X</CloseButton>
-                    <Content>{content}</Content>
-                </StyledModal>
-            </Wrapper>
+            <div className={styles.backdrop} />
+            <div className={styles.wrapper}>
+                <div className={styles.styledModal}>
+                    <p className={styles.closeButton} onClick={hide}>X</p>
+                    <p className={styles.content}>{content}</p>
+                </div>
+            </div>
         </>
     ) : null
 };

@@ -7,9 +7,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --fontFamilyModal    : -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;;
+    --backdropBackground: rgba(0, 0, 0, 0.3);
+    --closeButtonColor: black;
+    --styledModalBackground: white;
 }
 
 html {
@@ -36,6 +40,7 @@ li {
 }
 
 .wrapper {
+    font-family: var(--fontFamilyModal);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -51,7 +56,7 @@ li {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--backdropBackground);
     z-index: 500;
 }
 
@@ -59,7 +64,7 @@ li {
     display: flex;
     flex-direction: column;
     z-index: 100;
-    background: white;
+    background: var(--styledModalBackground);
     position: relative;
     margin: auto;
     border-radius: 0.5rem;
@@ -74,9 +79,10 @@ li {
     background: none;
     font-size: 2.5rem;
     font-weight: bold;
+    color: var(--closeButtonColor);
 }
 
-.closeButton :hover {
+.closeButton:hover {
     cursor: pointer;
 }
 
@@ -90,6 +96,3 @@ li {
     position: relative;
     bottom: 2rem;
 }
-/*export const separate = styled.hr`*/
-/*                        width: 80%;*/
-/*`;*/
