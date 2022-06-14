@@ -1,17 +1,17 @@
 {
   "name": "@pingrisalexis/react-modal",
-  "version": "1.1.7",
+  "version": "1.1.9",
   "private": false,
   "description": "A simple modal component for react",
   "author": "PingrisAlexis",
   "keywords": [
     "react",
     "components",
-    "ui"
+    "ui",
+    "modal"
   ],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
@@ -28,9 +28,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rollup -c",
+    "build": "rimraf dist && rollup -c",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm pack && npm publish"
   },
   "eslintConfig": {
     "extends": [
