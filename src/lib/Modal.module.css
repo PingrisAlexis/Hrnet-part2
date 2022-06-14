@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+    width: inherit;
+    outline: 0;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 500;
+}
+
+.styledModal {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    background: white;
+    position: relative;
+    margin: auto;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.closeButton {
+    align-self: flex-end;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.closeButton :hover {
+    cursor: pointer;
+}
+
+.content {
+    padding: 4rem;
+    display: block;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+}
+/*export const separate = styled.hr`*/
+/*                        width: 80%;*/
+/*`;*/

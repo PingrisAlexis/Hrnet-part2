@@ -30,11 +30,16 @@ const App = () => {
 
 render(<App />, document.getElementById("root"));
 ```
+### Edit CSS
 
+If you want to update the modal's CSS, you just have to overwrite the following variables:
 
-
-
-
-
-
-
+````   
+body {
+   --fontFamilyModal: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+   --backdropBackground: rgba(0, 0, 0, 0.3);
+   --closeButtonColor: black;
+   --styledModalBackground: white;
+}
