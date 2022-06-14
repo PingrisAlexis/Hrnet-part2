@@ -32,7 +32,7 @@ render(<App />, document.getElementById("root"));
 ```
 ### Edit CSS
 
-If you want to update the modal's CSS, you just have to overwrite the following variables:
+If you want to update the modal's CSS, you just have to overwrite the following variables on your own project:
 
 ````   
 body {
