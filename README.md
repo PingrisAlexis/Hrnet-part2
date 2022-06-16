@@ -12,7 +12,7 @@ A library of React components created using ```create-react-app```.
 
 ```
 import React from "react";
-import {Modal}  from "@pingrisalexis/react-modal";
+import { Modal}  from "@pingrisalexis/react-modal";
 
 const App = () => {
 
@@ -36,7 +36,7 @@ If you want to update the modal's CSS, you just have to overwrite the following 
 
 ````   
 body {
-    --rm-font-family    : -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    --rm-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     --rm-backdrop-background: rgba(0, 0, 0, 0.3);
