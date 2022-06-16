@@ -12,7 +12,7 @@ A library of React components created using ```create-react-app```.
 
 ```
 import React from "react";
-import { Modal}  from "@pingrisalexis/react-modal";
+import { Modal }  from "@pingrisalexis/react-modal";
 
 const App = () => {
 
