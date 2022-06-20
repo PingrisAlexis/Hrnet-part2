@@ -1,6 +1,6 @@
 {
   "name": "@pingrisalexis/react-modal",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "private": false,
   "description": "A simple modal component for react",
   "author": "PingrisAlexis",
@@ -10,6 +10,7 @@
     "ui",
     "modal"
   ],
+  "homepage": "https://github.com/PingrisAlexis/react-modal#readme",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
