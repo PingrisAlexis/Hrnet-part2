@@ -1,6 +1,6 @@
-# react-modal
+# Project 9/9 - Part 2/2 - Front End Developer Path
 
-## Project 14 Front-End OpenClassrooms - Create and publish an npm module.
+## Create and publish an npm module.
 
 A library of React components created using ```create-react-app```.
 
